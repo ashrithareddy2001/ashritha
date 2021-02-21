@@ -1,11 +1,13 @@
  #include <stdio.h>
 #include <math.h>
-int main()
+#include <conio.h>
+void main()
 {
  long int n;
   double sqnum;
   long int i,j=0,flag,chksqr,temp[10000];
   int count=0,k;
+  clrscr();
 	printf("Enter the number:");
     scanf("%ld",&n);
     
@@ -28,7 +30,7 @@ int main()
                     {
                       if(i%temp[k]==0)
                         {	
-                      	count--;
+                      	count--; 
                   	k=j+1;
                         }
                     }
